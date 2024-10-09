@@ -70,6 +70,8 @@
     flex-direction: column;
     margin: 20px;
     border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .container {
@@ -93,12 +95,17 @@ header {
     align-items: center; /* מרכז אופקית */
     justify-content: center;
     text-align: center;
+    background-color: #6a0dad;
+    border: #6a0dad 3px solid;
+    border-bottom: #a75db9 5px solid;
+    margin-bottom: 5px;
 }
 
 .logo {
     width: 90px;
     height: 90px;
     margin-bottom: 10px; /* רווח בין התמונה לכותרת */
+    border-radius: 50%;
 }
 
 h1 {
