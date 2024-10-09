@@ -1,11 +1,8 @@
-.prod-area{
-    display: grid;
-}
 
-.prod-area{
+.prod-area {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* עמודות לפי מקום זמין */
+    grid-gap: 10px; /* רווח בין התאים */
 }
 
 .product{
@@ -16,8 +13,26 @@
     border: 1px solid black;
     border-radius: 5%;
     box-shadow: 3px 3px 5px gray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.pbutton{
-    
+.pbutton {
+    background-color: #6a0dad; /* צבע סגול כהה */
+    color: white; /* צבע טקסט לבן */
+    padding: 15px 30px; /* רווח פנימי */
+    border: none; /* ללא גבול */
+    border-radius: 30px; /* קצוות עגולים */
+    font-size: 16px; /* גודל גופן */
+    cursor: pointer; /* מצביע על כפתור */
+    transition: background-color 0.3s; /* אפקט מעבר חלק */
+    margin-top: auto;
+}
+
+.pbutton:hover {
+    background-color: #a75db9; /* צבע סגול בהיר יותר בעת ריחוף */
+}
+
+.pimg {
+    width: 100%; /* התמונה תתאים לרוחב ה-div */
+    height: auto; /* גובה יישמר לפי היחס */
 }
