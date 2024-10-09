@@ -29,6 +29,13 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: linear-gradient(to bottom, #d1a2f2, #ffffff 50px); /* גרדיאנט אנכי */
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    background: linear-gradient(to bottom, #d1a2f2 , #ffffff 70px);
+    transform: scale(1.05); /* הגדלה של 5% */
+    z-index: 1; /* מבטיח שהקוביה תהיה מעל השכבות האחרות */
 }
 
 .pbutton {
@@ -97,11 +104,26 @@ header {
     align-items: center; /* מרכז אופקית */
     justify-content: center;
     text-align: center;
-    background-color: #6a0dad;
+    height: 150px; /* גובה ה-header */
+    background: linear-gradient(135deg, #6a0dad, #8e44ad, #a75db9); /* גרדיאנט בגוונים שונים של סגול */
     border: #6a0dad 3px solid;
     border-bottom: #a75db9 7px solid;
     margin-bottom: 7px;
+    color: white; /* צבע הטקסט */
+    font-size: 2rem; /* גודל טקסט */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* צל לטקסט */
+    animation: pulse 5s infinite alternate; /* אנימציה מתמשכת */
 }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05); /* אפקט ריחוף */
+    }
+}
+
 
 .logo {
     width: 90px;
