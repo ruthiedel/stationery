@@ -81,7 +81,27 @@ h2, p{
     margin: 0%;
 }
 
+
 .sidebar-button{
     margin: 10%;
 }
 
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* מרכז אופקית */
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px; /* רווח בין התמונה לכותרת */
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
