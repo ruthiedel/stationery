@@ -1,13 +1,23 @@
-
-
 .prod-area {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
-    flex-grow: 0.8;
+    grid-template-columns: repeat(4, 1fr); /* ארבעה עמודות */
+    grid-gap: 10px; /* רווח בין התאים */
+    width: 80%;
 }
 
-.product{
+@media (max-width: 800px) {
+    .prod-area {
+        grid-template-columns: repeat(2, 1fr); /* שניים אם המסך קטן */
+    }
+}
+
+@media (max-width: 500px) {
+    .prod-area {
+        grid-template-columns: 1fr; /* אחד אם המסך קטן מאוד */
+    }
+}
+
+.product {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -19,40 +29,49 @@
 }
 
 .pbutton {
-    background-color: #6a0dad; /* צבע סגול כהה */
-    color: white; /* צבע טקסט לבן */
-    padding: 15px 30px; /* רווח פנימי */
-    border: none; /* ללא גבול */
-    border-radius: 30px; /* קצוות עגולים */
-    font-size: 16px; /* גודל גופן */
-    cursor: pointer; /* מצביע על כפתור */
-    transition: background-color 0.3s; /* אפקט מעבר חלק */
+    background-color: #6a0dad;
+    /* צבע סגול כהה */
+    color: white;
+    /* צבע טקסט לבן */
+    padding: 15px 30px;
+    /* רווח פנימי */
+    border: none;
+    /* ללא גבול */
+    border-radius: 30px;
+    /* קצוות עגולים */
+    font-size: 16px;
+    /* גודל גופן */
+    cursor: pointer;
+    /* מצביע על כפתור */
+    transition: background-color 0.3s;
+    /* אפקט מעבר חלק */
     margin-top: auto;
 }
 
 
 .pbutton:hover {
-    background-color: #a75db9; /* צבע סגול בהיר יותר בעת ריחוף */
+    background-color: #a75db9;
+    /* צבע סגול בהיר יותר בעת ריחוף */
 }
 
 .pimg {
-    width: 100%; /* התמונה תתאים לרוחב ה-div */
-    height: auto; /* גובה יישמר לפי היחס */
+    width: 100%;
+    /* התמונה תתאים לרוחב ה-div */
+    height: auto;
+    /* גובה יישמר לפי היחס */
+    max-height: 150px;
 }
 
-
-.sidebar{
-   
-    flex-grow: 0.2;
+.sidebar {
+    width: 20%;
 }
 
-
-
-
-
-.container{
-    display:flex;
+.container {
+    display: flex;
     flex-direction: row;
+}
 
+h2, p{
+    margin: 0%;
 }
 
