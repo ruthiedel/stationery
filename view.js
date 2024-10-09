@@ -5,7 +5,7 @@ const renderProduct = (product)=>
         <h2>${product.title}</h2>
         <p>${product.price}</p>
         <img src="${product.image}" class="pimg" alt="${product.name}">
-        <button  class="pbutton">Add to Cart</button>
+        <button  class="pbutton">Add to Cart 🛒</button>
     </div>
     `;
 }
