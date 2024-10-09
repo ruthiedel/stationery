@@ -1,3 +1,15 @@
+
+body {
+    background-image: url("./images/background3.jpg");
+    background-repeat: no-repeat; /* לא לחזור על התמונה */
+    background-size: cover; /* לכסות את כל הרקע */
+    background-attachment: fixed; /* להחזיק את התמונה במקומה */
+    background-position: center; /* למרכז את התמונה */
+    height: 100vh; /* גובה הדף */
+    margin: 0; /* ביטול רווחים */
+}
+
+
 .prod-area {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* ארבעה עמודות */
