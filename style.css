@@ -1,8 +1,10 @@
 
+
 .prod-area {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* עמודות לפי מקום זמין */
-    grid-gap: 10px; /* רווח בין התאים */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    flex-grow: 0.8;
 }
 
 .product{
@@ -28,6 +30,7 @@
     margin-top: auto;
 }
 
+
 .pbutton:hover {
     background-color: #a75db9; /* צבע סגול בהיר יותר בעת ריחוף */
 }
@@ -36,3 +39,20 @@
     width: 100%; /* התמונה תתאים לרוחב ה-div */
     height: auto; /* גובה יישמר לפי היחס */
 }
+
+
+.sidebar{
+   
+    flex-grow: 0.2;
+}
+
+
+
+
+
+.container{
+    display:flex;
+    flex-direction: row;
+
+}
+
