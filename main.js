@@ -1,0 +1,3 @@
+function loadProducts() {
+    renderProducts(Gnotebooks);
+}
