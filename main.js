@@ -13,3 +13,10 @@ function  onNoteBookFilterClick()
 {
     renderProducts(Gnotebooks);
 }
+
+function onFetchClick() 
+{
+    fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>renderProducts(json))
+}
