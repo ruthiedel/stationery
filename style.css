@@ -30,6 +30,7 @@
     background: linear-gradient(to bottom, #d1a2f2, #ffffff 50px); /* גרדיאנט אנכי */
     text-align: center;
     transition: transform 0.3s ease;
+    margin: 5px;
 }
 
 .product:hover {
@@ -65,11 +66,11 @@
 }
 
 .pimg {
-    width: 100%;
+    width: 80%;
     /* התמונה תתאים לרוחב ה-div */
     height: auto;
     /* גובה יישמר לפי היחס */
-    max-height: 150px;
+    max-height: 100px;
 }
 
 .sidebar {
