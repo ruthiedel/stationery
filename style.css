@@ -1,11 +1,12 @@
-.prod-area{
-    display: grid;
-}
+
 
 .prod-area{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
+
+
+    flex-grow: 0.8;
 }
 
 .product{
@@ -20,4 +21,19 @@
 
 .pbutton{
     
+}
+
+.sidebar{
+   
+    flex-grow: 0.2;
+}
+
+
+
+
+
+.container{
+    display:flex;
+    flex-direction: row;
+
 }
